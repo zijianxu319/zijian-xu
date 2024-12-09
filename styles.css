@@ -8,8 +8,8 @@
 /* Body and general styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #ffffff; /* 白色背景，确保足够的对比度 */
+    color: #333333; /* 深色文本，确保与背景有足够的对比 */
     padding: 30px;
     line-height: 1.8;
 }
@@ -18,8 +18,8 @@ body {
 header {
     text-align: center;
     margin-bottom: 40px;
-    background-color: #4682b4;
-    color: white;
+    background-color: #005f73; /* 使用深色背景，确保文本对比度 */
+    color: white; /* 白色文本，确保与深色背景的对比度 */
     padding: 50px 0;
     border-radius: 10px;
 }
@@ -34,7 +34,7 @@ header h1 {
 
 header p {
     font-size: 1.3em;
-    color: white;
+    color: white; /* 保持白色文本，以适配深色背景 */
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -58,7 +58,7 @@ section {
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.8em;
-    color: #333;
+    color: #333; /* 保证标题的对比度 */
     margin-bottom: 30px;
     text-align: center;
     font-weight: 700;
@@ -68,7 +68,7 @@ h2 {
 
 p {
     font-size: 1.2em;
-    color: #555;
+    color: #333333; /* 深色文本，确保足够的对比度 */
     font-family: 'Poppins', sans-serif;
     text-align: justify;
     margin-bottom: 20px;
@@ -77,7 +77,7 @@ p {
 
 /* Technical Interests Section */
 #technical-interests {
-    background-color: #ffffff;
+    background-color: #ffffff; /* 使用浅色背景，确保文本对比度 */
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
@@ -131,8 +131,8 @@ button {
     font-size: 1.2em;
     padding: 12px 25px;
     border: none;
-    background: linear-gradient(135deg, #6ab7ff, #4682b4);
-    color: white;
+    background-color: #005f73; /* 按钮背景色与第一段文字一致 */
+    color: white; /* 白色文本，符合其他部分的风格 */
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -143,8 +143,23 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(135deg, #5a9bcf, #3b6c8f);
-    transform: translateY(-3px);
+    background-color: #003f4d; /* 深色的按钮悬停背景，增加对比 */
+    transform: translateY(-3px); /* 悬停效果 */
+}
+
+/* Specific Button Styling for Portfolio Links (pj1 and pj2 buttons) */
+#pj1, #pj2 {
+    background-color: #005f73; /* 按钮背景色与第一段文字一致 */
+    color: white; /* 按钮文本颜色 */
+}
+
+#pj1 a, #pj2 a {
+    color: white !important; /* 强制按钮链接文字颜色为白色 */
+    text-decoration: none; /* 去掉默认的下划线 */
+}
+
+#pj1:hover, #pj2:hover {
+    background-color: #003f4d; /* 悬停时的背景颜色与第一段文字一致 */
 }
 
 /* Project Images Styling */
@@ -165,14 +180,14 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #333333; /* 深色背景，确保文本对比度 */
+    color: #ffffff; /* 白色文本，确保与深色背景的对比度 */
     margin-top: 60px;
     border-radius: 10px;
 }
 
 footer a {
-    color: #fff;
+    color: #ffffff; /* 白色链接，确保高对比度 */
     font-size: 1.2em;
     text-decoration: none;
 }
@@ -181,11 +196,16 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* 修改footer p的文字颜色为白色 */
+footer p {
+    color: #ffffff; /* 白色文本，确保与背景有足够的对比度 */
+}
+
 /* Loading indicator styling */
 #loading {
     font-size: 1.5em;
     margin-top: 20px;
-    color: #0066cc;
+    color: #0066cc; /* 清晰的加载指示器颜色 */
 }
 
 /* Responsive Design */
