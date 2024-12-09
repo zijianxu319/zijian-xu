@@ -3,33 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        // Example: Use hideLoading when the page is fully loaded
+        window.onload = function() {
+            hideLoading(); // Hide the loading indicator once the page is fully loaded
+        };
+    </script>
 </head>
 <body>
 <header>
     <h1>About Me</h1>
-    <p>Hello! My name is Xu Zijian, and I am currently a Computer Science student working towards my bachelor's degree, expected to graduate in 2026.</p>
+    <p>Hello! My name is Xu Zijian, and I am a dedicated Computer Science student currently pursuing my Bachelor's degree. I have a passion for data science, predictive analytics, and big data, and I aim to apply my knowledge in real-world problem-solving. My academic journey will culminate in 2026, and I look forward to exploring more advanced concepts in computing and data science.</p>
     <img src="我的证件照.jpg" alt="Your photo" class="profile-image">
 </header>
 
 <section id="technical-interests">
     <h2>Technical Interests</h2>
-    <p>I have a strong interest in big data, especially in big data prediction and analysis. As data continues to grow exponentially, I am fascinated by how machine learning and predictive analytics can harness that data to create meaningful insights. I aim to gain hands-on experience in this field through learning and practical projects, exploring tools and algorithms for data processing, and understanding how big data can influence decision-making in business and technology.</p>
+    <p>I am particularly interested in big data analytics and predictive models. These technologies allow organizations to harness vast amounts of data and generate insights that drive decision-making. I also have a keen interest in data visualization techniques, which help make complex data more comprehensible and accessible to stakeholders across different industries.</p>
     <img src="big-data.webp" alt="Big Data Interest Image" class="interest-image">
 </section>
 
 <section id="portfolio">
     <h2>Portfolio</h2>
-    <p>Here are some of the projects I have completed:</p>
+    <p>Here are some of the projects I have worked on that showcase my skills in web development, server-side programming, and data-driven applications:</p>
     <ul>
-        <li><a href="project1.html" target="_blank">Project 1: My Restaurant Web Design</a></li>
-        <li><a href="project2.html" target="_blank">Project 2: Designing an Order System on the Server Side</a></li>
+        <li><button onclick="showLoading();"><a href="project1.html" target="_blank">Project 1: Restaurant Web Design</a></button></li>
+        <li><button onclick="showLoading();"><a href="project2.html" target="_blank">Project 2: Server-side Order System</a></button></li>
     </ul>
 </section>
 
 <footer>
     <p>© 2024 Xu Zijian. All rights reserved.</p>
+    <a href="index.html">Back to Home</a>
 </footer>
+
+<div id="loading" style="display:none; text-align: center;">
+    <p>Loading, please wait...</p>
+</div>
+
 </body>
 </html>

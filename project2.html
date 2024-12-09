@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 - Details</title>
+    <title>Project 2 - Ordering System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,12 +13,12 @@
 
 <section id="project-details">
     <h2>Project Background</h2>
-    <p>This is the second project I completed, aimed at building a restaurant ordering system on a phpMyAdmin server. The project includes online ordering and a backend feature to display order information, and uses PHP programming language.</p>
+    <p>This project aimed to develop a server-side ordering system for a restaurant, built using PHP and MySQL. It allows users to place orders online while providing restaurant staff with an interface to view and manage orders efficiently. The database was structured to store user data and order details securely.</p>
 
     <h2>Technical Details</h2>
     <ul>
-        <li>Built using HTML and PHP</li>
-        <li>Interacts with the database to store user data</li>
+        <li>Developed using PHP for server-side functionality and MySQL for database management.</li>
+        <li>Implemented data validation and error handling to ensure the system runs smoothly.</li>
     </ul>
 
     <h2>Project Screenshots</h2>
@@ -26,7 +26,12 @@
 </section>
 
 <footer>
-    <p><a href="index.html">Back to Homepage</a></p>
+    <button onclick="showLoading();"><a href="index.html">Back to Homepage</a></button>
 </footer>
+
+<div id="loading" style="display:none; text-align: center;">
+    <p>Loading, please wait...</p>
+</div>
+
 </body>
 </html>
